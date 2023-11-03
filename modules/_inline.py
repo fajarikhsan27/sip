@@ -138,7 +138,7 @@ async def uptd_plugin(event):
                 help_ += "\n"
     if not help_:
         help_ = f"{file} has no Detailed Help!"
-    help_ += "\n© @KynanSupport"
+    help_ += "\n© @thelightch"
     data = f"uh_{key}_"
     if index is not None:
         data += f"|{index}"
@@ -211,7 +211,7 @@ async def _(e):
     button = InButtons.copy()
     button.append(
         [
-            Button.inline("❮", data="open"),
+            Button.inline("Kembali", data="open"),
         ],
     )
     await e.edit(buttons=button, link_preview=False)
