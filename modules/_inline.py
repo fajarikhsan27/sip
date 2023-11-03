@@ -142,7 +142,7 @@ async def uptd_plugin(event):
     data = f"uh_{key}_"
     if index is not None:
         data += f"|{index}"
-    buttons = [[Button.inline("❮", data=data)]]
+    buttons = [[Button.inline("Kembali", data=data)]]
     try:
         await event.edit(help_, buttons=buttons)
     except Exception as er:
@@ -169,7 +169,7 @@ async def _(event):
             file="ayra_updates.txt",
             buttons=[
                 [Button.inline("Update Sekarang", data="updatenow")],
-                [Button.inline("❮", data="ownr")],
+                [Button.inline("Kembali", data="ownr")],
             ],
         )
         remove("ayra_updates.txt")
@@ -178,7 +178,7 @@ async def _(event):
             changelog_str,
             buttons=[
                 [Button.inline("Update Sekarang", data="updatenow")],
-                [Button.inline("❮", data="ownr")],
+                [Button.inline("Kembali", data="ownr")],
             ],
             parse_mode="html",
         )
