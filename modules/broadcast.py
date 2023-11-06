@@ -68,7 +68,7 @@ async def gcast(event):
                     err += f"• {str(h)}" + "\n"
                     er += 1
     await kk.edit(
-        f"**✅ Broadcast Berhasil Terkirim Ke : `{done}` Grup\nGagal Terkirim Ke : `{er}` Grup.**"
+        f"**✅ Broadcast Berhasil Terkirim Ke : `{done}` Grup \n\ngagl Terkirim Ke : `{er}` Grup.**"
     )
 
 
