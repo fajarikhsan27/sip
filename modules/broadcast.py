@@ -41,7 +41,7 @@ async def gcast(event):
         return await eor(
             event, "`Berikan beberapa teks ke Globally Broadcast atau balas pesan..`"
         )
-    kk = await event.eor("`Sebentar Kalo Limit Jangan Salahin Kynan Ya...`")
+    kk = await event.eor("`Sebentar Lagi Mengirim Bacotan Mu Kalau Limit Jangan Salahin Fajar...`")
     er = 0
     done = 0
     err = ""
@@ -103,7 +103,7 @@ async def gucast(event):
                 except BaseException:
                     er += 1
     await kk.edit(
-        f"**Pesan Broadcast Berhasil Terkirim Ke : `{done}` Pengguna, Dan Gagal Terkirim Ke : `{er}` Pengguna.**"
+        f"**✅ Broadcast Berhasil Terkirim Ke : `{done}` Pengguna\n❌ Gagal Terkirim Ke : `{er}` Pengguna.**"
     )
 
 
